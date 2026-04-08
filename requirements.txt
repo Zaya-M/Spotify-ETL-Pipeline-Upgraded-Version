@@ -1,0 +1,30 @@
+# ============================================================
+# File: requirements.txt
+# Purpose: Project dependencies for environment replication via pip
+# Usage: Run 'pip install -r requirements.txt' from the root directory
+# ============================================================
+
+# Spotify API Client
+spotipy==2.23.0
+
+# Data Processing and Manipulation
+pandas==2.1.0
+numpy==1.26.0
+
+# Database Connectivity and ORM
+sqlalchemy>=1.4.28,<2.0
+pymysql==1.1.0
+cryptography==41.0.5      # Required for PyMySQL encrypted connections
+
+# Workflow Orchestration (Install in WSL/Linux; Windows not supported)
+apache-airflow==2.8.0
+
+# Environment Variable Management
+python-dotenv==1.0.0
+
+# Data Visualization (For exploratory analysis)
+matplotlib==3.8.0
+seaborn==0.13.0
+
+# Logging and Debugging
+loguru==0.7.2

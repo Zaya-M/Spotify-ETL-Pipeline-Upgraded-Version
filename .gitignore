@@ -1,0 +1,47 @@
+# ============================================================
+# File: .gitignore
+# Purpose: Define files and directories to be ignored by Git
+# Location: Root directory
+# ============================================================
+
+### Environment Variables (Sensitive data) ###
+# Strictly ignore local environment files to prevent credential leaks
+.env
+.env.local
+
+### Python Environments ###
+# Virtual environments
+.venv/
+venv/
+spotify_env/
+env/
+
+# Python bytecode and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+### IDE & Editors ###
+.vscode/
+.idea/
+
+### Jupyter Notebooks ###
+.ipynb_checkpoints/
+
+### Operating System Files ###
+.DS_Store
+Thumbs.db
+
+### Logging ###
+# Runtime generated log files
+logs/
+*.log
+
+### Workflow Orchestration (Airflow) ###
+# Ignore runtime logs and local configurations
+airflow/logs/
+airflow/plugins/.env
